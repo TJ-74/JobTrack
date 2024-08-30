@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Role Tracker</h1>
+        <form id="job-form">
+            <div class="form-group">
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" required>
+            </div>
+            <div class="form-group">
+                <label for="job-role">Job Role:</label>
+                <input type="text" id="job-role" required>
+            </div>
+            <div class="form-group">
+                <label for="company-link">Company Link:</label>
+                <input type="url" id="company-link" required>
+            </div>
+            <button type="submit">Add Job</button>
+        </form>
+        <table id="job-table">
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Job Role</th>
+                    <th>Company Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./static/script.js"></script>
+</body>
+</html>
